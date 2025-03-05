@@ -892,19 +892,37 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
-  row-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap; /* Wrap items for small screens */
 }
 
+/* Individual Contact Information */
 .contact__information {
   display: flex;
-  margin-bottom: var(--mb-2);
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  flex: 1; /* Responsive width */
 }
 
+/* Icons Styling */
 .contact__icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--first-color);
-  margin-right: var(--mb-0-75);
+  margin-bottom: 0.5rem;
 }
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .contact__container {
+      flex-direction: column; /* Make it vertical */
+      gap: 2rem; /* Reduce gap on small screens */
+  }
+}
+
 
 .content__title {
   font-size: var(--h3-font-size);
@@ -916,27 +934,6 @@ img {
   color: var(--text-color-light);
 }
 
-.contact__content {
-  background-color: var(--input-color);
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem;
-}
-
-.contact__label {
-  font-size: var(--smaller-font-size);
-  color: var(--title-color);
-}
-
-.contact__input {
-  width: 100%;
-  background-color: var(--input-color);
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
-  padding: 0.25rem 0.5rem 0.5rem 0;
-}
 
 /*==================== FOOTER ====================*/
 .footer {
