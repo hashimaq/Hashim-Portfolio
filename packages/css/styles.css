@@ -516,29 +516,7 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__node {
-  width: 80%;
-}
 
-.skills__express {
-  width: 75%;
-}
-
-.skills__mongodb {
-  width: 70%;
-}
-
-.skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 80%;
-}
-
-.skills__js {
-  width: 90%;
-}
 
 .skills__wordpress {
   width: 70%;
